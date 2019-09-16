@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>foodService</title>
+
+    <script src="lib/onsen/js/onsenui.js"></script>
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="./js/app.js"></script>
+    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+</head>
+
+<body>
+    <ons-page id="resturantList">
+        <!--toolbar-->
+        <ons-toolbar>
+            <div class="left">
+                <ons-toolbar-button icon="md-menu" size="70px" style="color: rgb(0, 0, 0);"></ons-toolbar-button>
+            </div>
+            <div class="center">foodService</div>
+            <div class="right">
+                <ons-icon icon="md-home" size="40px" style="color: rgb(0, 0, 0);"></ons-icon>
+            </div>
+            <br>
+        </ons-toolbar>
+        <!--name-->
+        <p style="text-align: center"><b>Restaurants List</b></p>
+        <!--แถวที่1: กิตติก๋วยเตี๋ยวเป็ด,ศาลาลอยซีฟู้ด-->
+        <ons-row>
+            <ons-col width="15%">
+            </ons-col>
+            <ons-col width="30%">
+                <ons-card style="width: 100%;">
+                    <ons-row>
+                        <ons-col>
+                            <div class="title" style="text-align: center">
+                                กิตติก๋วยเตี๋ยวเป็ด
+                            </div>
+                        </ons-col>
+                        <ons-col width="70%">
+                            <img src="image/list/กิตติก๋วยเตี๋ยวเป็ด/4DQpjUtzLUwmJZZPEbFK8Kfd3M7jENxSpbh9QS3L0sMB.jpg"
+                                alt="Onsen UI" style="width: 100%">
+                        </ons-col>
+                    </ons-row>
+                    <p style="width: auto; margin: 0 auto;">
+                        <ons-button modifier="large--cta" onclick="menuKitti()">Menu</ons-button>
+                    </p>
+                </ons-card>
+            </ons-col>
+            <ons-col width="10%">
+            </ons-col>
+            <ons-col width="30%">
+                <ons-card style="width: 100%;">
+                    <ons-row>
+                        <ons-col>
+                            <div class="title" style="text-align: center">
+                                ศาลาลอยซีฟู้ด
+                            </div>
+                        </ons-col>
+                        <ons-col width="70%">
+                            <img src="image/list/ศาลาลอยซีฟู้ด/89950-001-600x400.jpg" alt="Onsen UI"
+                                style="width: 100%">
+                        </ons-col>
+                    </ons-row>
+                    <p style="width: auto; margin: 0 auto;">
+                        <ons-button modifier="large--cta" onclick="menuSala()">Menu</ons-button>
+                    </p>
+                </ons-card>
+            </ons-col>
+            <ons-col width="15%">
+            </ons-col>
+        </ons-row>
+        <!--แถวที่1: ป่าหล่ายซีฟู้ด,MR.INK-->
+        <ons-row>
+            <ons-col width="15%">
+            </ons-col>
+            <ons-col width="30%">
+                <ons-card style="width: 100%;">
+                    <ons-row>
+                        <ons-col>
+                            <div class="title" style="text-align: center">
+                                ป่าหล่ายซีฟู้ด
+                            </div>
+                        </ons-col>
+                        <ons-col width="70%">
+                            <img src="image/list/ป่าหล่ายซีฟู้ด/ดาวน์โหลด.jpg" alt="Onsen UI" style="width: 100%">
+                        </ons-col>
+                    </ons-row>
+                    <p style="width: auto; margin: 0 auto;">
+                        <ons-button modifier="large--cta" onclick="menuPaHlay()">Menu</ons-button>
+                    </p>
+                </ons-card>
+            </ons-col>
+            <ons-col width="10%">
+            </ons-col>
+            <ons-col width="30%">
+                <ons-card style="width: 100%;">
+                    <ons-row>
+                        <ons-col>
+                            <div class="title" style="text-align: center">
+                                MR.INK Bubble Milk Tea
+                            </div>
+                        </ons-col>
+                        <ons-col width="70%">
+                            <img src="image/list/MR.INK Bubble Milk Tea/68908129_425969078015497_4067550895095676928_n.jpg"
+                                alt="Onsen UI" style="width: 100%">
+                        </ons-col>
+                    </ons-row>
+                    <p style="width: auto; margin: 0 auto;">
+                        <ons-button modifier="large--cta" onclick="menuINK()">Menu</ons-button>
+                    </p>
+                </ons-card>
+            </ons-col>
+            <ons-col width="15%">
+            </ons-col>
+        </ons-row>
+        <!--แถวที่3: ร้านหวานละมุน-->
+        <ons-row>
+            <ons-col width="15%">
+            </ons-col>
+            <ons-col width="30%">
+                <ons-card style="width: 100%;">
+                    <ons-row>
+                        <ons-col>
+                            <div class="title" style="text-align: center">
+                                ร้านหวานละมุน
+                            </div>
+                        </ons-col>
+                        <ons-col width="70%">
+                            <img src="image/list/ร้านหวานละมุน/7dc63752fca0417f80b742420f409362.jpg" alt="Onsen UI"
+                                style="width: 100%">
+                        </ons-col>
+                    </ons-row>
+                    <p style="width: auto; margin: 0 auto;">
+                        <ons-button modifier="large--cta" onclick="menuHwanlamun()">Menu</ons-button>
+                    </p>
+                </ons-card>
+            </ons-col>
+            <ons-col width="10%">
+            </ons-col>
+            <ons-col width="30%">
+            </ons-col>
+            <ons-col width="15%">
+            </ons-col>
+        </ons-row>
+    </ons-page>
+</body>
+
+</html>
