@@ -1,90 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
+<ons-page id="resturantMenuPage">
+    <!--toolbar-->
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button icon="md-menu" size="70px" style="color: rgb(0, 0, 0);"></ons-toolbar-button>
+        </div>
+        <div class="center">foodService</div>
+        <div class="right">
+            <ons-icon icon="md-home" size="40px" style="color: rgb(0, 0, 0);"></ons-icon>
+        </div>
+        <br>
+    </ons-toolbar>
+    <!--name-->
+    <p style="text-align: center"><b>กิตติก๋วยเตี๋ยวเป็ด</b></p>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>foodService</title>
-
-    <script src="lib/onsen/js/onsenui.js"></script>
-    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
-    <script src="./js/app.js"></script>
-    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
-    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
-</head>
-
-<body>
-    <ons-page id="resturantMenu">
-        <!--toolbar-->
-        <ons-toolbar>
-            <div class="left">
-                <ons-toolbar-button icon="md-menu" size="70px" style="color: rgb(0, 0, 0);"></ons-toolbar-button>
+    <ons-row>
+        <ons-card style="width: 100%;">
+            <ons-row>
+                <img src="image/list/กิตติก๋วยเตี๋ยวเป็ด/4DQpjUtzLUwmJZZPEbFK8Kfd3M7jENxSpbh9QS3L0sMB.jpg"
+                    alt="Onsen UI" style="width: 100%">
+            </ons-row>
+            <div>
+                <p style="text-align: center"><b>รายการอาหาร</b></p>
             </div>
-            <div class="center">foodService</div>
-            <div class="right">
-                <ons-icon icon="md-home" size="40px" style="color: rgb(0, 0, 0);"></ons-icon>
-            </div>
-            <br>
-        </ons-toolbar>
-        <!--name-->
-        <p style="text-align: center"><b>กิตติก๋วยเตี๋ยวเป็ด</b></p>
-
-        <ons-row>
-            <ons-card style="width: 100%;">
-                <ons-row>
-                    <img src="image/list/กิตติก๋วยเตี๋ยวเป็ด/4DQpjUtzLUwmJZZPEbFK8Kfd3M7jENxSpbh9QS3L0sMB.jpg"
-                        alt="Onsen UI" style="width: 100%">
-                </ons-row>
-                <div>
-                    <p style="text-align: center"><b>รายการอาหาร</b></p>
-                </div>
-                <ons-row>
-                    <ons-col>
-                        <ons-row>
-                            <ons-col width="45%">
-                                <img src="image/menu/กิตติก๋วยเตี๋ยวเป็ด/7fb8c47c2c964168a2eb2cf3b0c247a0.jpg"
-                                    alt="Onsen UI" style="width: 100%">
-                            </ons-col>
-                            <ons-col width="10%">
-                            </ons-col>
-                            <ons-col width="45%">
-                                <img src="image/menu/กิตติก๋วยเตี๋ยวเป็ด/00KI8Q15B31D29E2BE5FDBpx.jpg" alt="Onsen UI"
-                                    style="width: 100%">
-                            </ons-col>
-                        </ons-row>
-                        <br>
-                        <ons-row>
-                            <ons-col width="45%">
-                                <img src="image/menu/กิตติก๋วยเตี๋ยวเป็ด/4DQpjUtzLUwmJZZPEbFK8Kfd3M7jENxaJmrJLGZaFtwM.jpg"
-                                    alt="Onsen UI" style="width: 100%">
-                            </ons-col>
-                            <ons-col width="45%">
-                            </ons-col>
-                        </ons-row>
-                    </ons-col>
-                    <ons-col>
-                        <div style="text-align: right;">
-                            <p>ก๋วยเตี๋ยวบะหมี่น้ำเป็ดพะโล้ 50 บาท <ons-button>+</ons-button>
-                            </p>
-                            <p>ก๋วยเตี๋ยวบะหมี่เเห้งเป็ดพะโล้ 50 บาท <ons-button>+</ons-button>
-                            </p>
-                            <p>ก๋วยเตี๋ยวเส้นเล็กน้ำเป็ดพะโล้ 50 บาท<ons-button>+</ons-button>
-                            </p>
-                            <p>ก๋วยเตี๋ยวเส้นเล็กเเห้งเป็ดพะโล้ 50 บาท<ons-button>+</ons-button>
-                            </p>
-                            <p>ก๋วยเตี๋ยวเส้นหมี่น้ำเป็ดพะโล้ 50 บาท<ons-button>+</ons-button>
-                            </p>
-                            <p>ก๋วยเตี๋ยวเส้นหมี่เเห้งเป็ดพะโล้ 50 บาท<ons-button>+</ons-button>
-                            </p>
-                            <br><br><br>
-                            <ons-button class="large" onclick="Bye()">Bye</ons-button>
-                        </div>
-                    </ons-col>
-                </ons-row>
-            </ons-card>
-        </ons-row>
-    </ons-page>
+            <ons-row>
+                <ons-col>
+                    <ons-row>
+                        <ons-col width="45%">
+                            <img src="image/menu/กิตติก๋วยเตี๋ยวเป็ด/7fb8c47c2c964168a2eb2cf3b0c247a0.jpg"
+                                alt="Onsen UI" style="width: 100%">
+                        </ons-col>
+                        <ons-col width="10%">
+                        </ons-col>
+                        <ons-col width="45%">
+                            <img src="image/menu/กิตติก๋วยเตี๋ยวเป็ด/00KI8Q15B31D29E2BE5FDBpx.jpg" alt="Onsen UI"
+                                style="width: 100%">
+                        </ons-col>
+                    </ons-row>
+                    <br>
+                    <ons-row>
+                        <ons-col width="45%">
+                            <img src="image/menu/กิตติก๋วยเตี๋ยวเป็ด/4DQpjUtzLUwmJZZPEbFK8Kfd3M7jENxaJmrJLGZaFtwM.jpg"
+                                alt="Onsen UI" style="width: 100%">
+                        </ons-col>
+                        <ons-col width="45%">
+                        </ons-col>
+                    </ons-row>
+                </ons-col>
+                <ons-col>
+                    <div style="text-align: right;">
+                        <p>ก๋วยเตี๋ยวบะหมี่น้ำเป็ดพะโล้ 50 บาท <ons-button>+</ons-button>
+                        </p>
+                        <p>ก๋วยเตี๋ยวบะหมี่เเห้งเป็ดพะโล้ 50 บาท <ons-button>+</ons-button>
+                        </p>
+                        <p>ก๋วยเตี๋ยวเส้นเล็กน้ำเป็ดพะโล้ 50 บาท<ons-button>+</ons-button>
+                        </p>
+                        <p>ก๋วยเตี๋ยวเส้นเล็กเเห้งเป็ดพะโล้ 50 บาท<ons-button>+</ons-button>
+                        </p>
+                        <p>ก๋วยเตี๋ยวเส้นหมี่น้ำเป็ดพะโล้ 50 บาท<ons-button>+</ons-button>
+                        </p>
+                        <p>ก๋วยเตี๋ยวเส้นหมี่เเห้งเป็ดพะโล้ 50 บาท<ons-button>+</ons-button>
+                        </p>
+                        <br><br><br>
+                        <ons-button class="large" onclick="Bye()">Bye</ons-button>
+                    </div>
+                </ons-col>
+            </ons-row>
+        </ons-card>
+    </ons-row>
+</ons-page>
 </body>
 
 </html>
