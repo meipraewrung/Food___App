@@ -1,61 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>foodService</title>
-
-    <script src="lib/onsen/js/onsenui.js"></script>
-    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
-    <script src="./js/app.js"></script>
-    <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
-    <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
-</head>
-
-<body>
-    <center>
-        <ons-page id="Register">
-            <div class="dialog">
-                <div class="dialog-container">
-                    <div class="card card--materiall" style="height: auto; padding: 1px 0 0 0;">
-                        <div style="text-align: center; margin-top: 30px;">
-                            <p>
-                                <img src="image/foodS.png" alt="Onsen UI" style="width: 25%">
-                            </p>
-                            <p>
-                                <ons-input id="FLname" modifier="underbar" type="FLname" placeholder="Name Surname"
-                                    float>
-                                </ons-input>
-                            </p>
-                            <p>
-                                <ons-input id="email" modifier="underbar" type="email" placeholder="E-mail" float>
-                                </ons-input>
-                            </p>
-                            <p>
-                                <ons-input id="password" modifier="underbar" type="password" placeholder="Password"
-                                    float>
-                                </ons-input>
-                            </p>
-                            <p>
-                                <ons-input id="phone" modifier="underbar" type="phone" placeholder="Phone number" float>
-                                </ons-input>
-                            </p>
-                            <p>
-                                <ons-input id="address" modifier="underbar" type="address" placeholder="Address" float>
-                                </ons-input>
-                            </p>
-                            <p style="width: auto; margin: 0 auto;">
-                                <ons-button class="large--cta" onclick="register()">Register</ons-button>
-                            </p>
-                            <br><br>
-                        </div>
-                    </div>
+<ons-page id="registerPage">
+    <div class="dialog">
+        <div class="dialog-container">
+            <div class="card card--materiall" style="height: auto; padding: 1px 0 0 0;">
+                <div style="text-align: center; margin-top: 30px;">
+                    <p>
+                        <img src="image/foodS.png" alt="Onsen UI" style="width: 25%">
+                    </p>
+                    <p>
+                        <ons-input id="FLname" modifier="underbar" type="FLname" placeholder="Name Surname" float>
+                        </ons-input>
+                    </p>
+                    <p>
+                        <ons-input id="email" modifier="underbar" type="email" placeholder="E-mail" float>
+                        </ons-input>
+                    </p>
+                    <p>
+                        <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float>
+                        </ons-input>
+                    </p>
+                    <p>
+                        <ons-input id="phone" modifier="underbar" type="phone" placeholder="Phone number" float>
+                        </ons-input>
+                    </p>
+                    <p>
+                        <ons-input id="address" modifier="underbar" type="address" placeholder="Address" float>
+                        </ons-input>
+                    </p>
+                    <p style="width: auto; margin: 0 auto;">
+                        <ons-button class="large--cta" onclick="register()">Register</ons-button>
+                    </p>
+                    <br><br>
                 </div>
             </div>
-        </ons-page>
-    </center>
-</body>
-
-</html>
+        </div>
+    </div>
+</ons-page>
