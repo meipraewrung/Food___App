@@ -3,108 +3,173 @@
     <ons-toolbar>
         <div class="left">
             <ons-toolbar-button id="menubtn">
-                    <ons-icon icon="md-menu" size="25px" style="color: rgb(0, 0, 0);"></ons-icon>
-                </ons-toolbar-button>
+                <ons-icon icon="md-menu" onclick="fn.openMB()"></ons-icon>
+            </ons-toolbar-button>
         </div>
         <div class="center">foodService</div>
         <div class="right">
             <ons-toolbar-button id="homebtn">
-                <ons-icon icon="md-home" size="40px" style="color: rgb(0, 0, 0);"></ons-icon>
+                <ons-icon icon="md-home"></ons-icon>
             </ons-toolbar-button>
         </div>
         <br>
     </ons-toolbar>
-    <!--name-->
+    <br>
+    <!--recomended-->
+    <div class="recomended">
+        <ons-row class="row justify-content-center">
+            <ons-card style="width: 100%;">
+                <p style="text-align: center"><b>Recomeded</b></p>
+                <br>
+                <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable
+                    item-width="130px" class="recomended_list" id="carouselR">
+                    <ons-carousel-item modifier="nodivider" id="recommend1R1" class="recomended_recommend">
+                        <div class="thumbnailR1"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/recommended%2F%E0%B8%81%E0%B8%B4%E0%B8%95%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B9%8B%E0%B8%A7%E0%B8%A2%E0%B9%80%E0%B8%95%E0%B8%B5%E0%B9%8B%E0%B8%A2%E0%B8%A7%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%94%2F4DQpjUtzLUwmJZZPEbFK8Kfd3M7jENxSpbh9QS3L0sMB.jpg?alt=media&token=bd869097-9d23-47e2-a154-6521765dbbe0')">
+                        </div>
+                        <div class="recomended_recommend_title" id="recommend2_name">กิตติก๋วยเตี๋ยวเป็ด</div>
+                    </ons-carousel-item>
+                    <ons-carousel-item modifier="nodivider" id="recommend1R2" class="recomended_recommend">
+                        <div class="thumbnailR1"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/recommended%2F%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AB%E0%B8%A7%E0%B8%B2%E0%B8%99%E0%B8%A5%E0%B8%B0%E0%B8%A1%E0%B8%B8%E0%B8%99%2F7dc63752fca0417f80b742420f409362.jpg?alt=media&token=bdfda349-6328-416e-bf65-40461a88efe1')">
+                        </div>
+                        <div class="recomended_recommend_title" id="recommend2_name">ร้านหวานละมุน</div>
+                    </ons-carousel-item>
+                    <ons-carousel-item modifier="nodivider" id="recommend1R3" class="recomended_recommend">
+                        <div class="thumbnailR1"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/recommended%2FMR.INK%20Bubble%20Milk%20Tea%2F68908129_425969078015497_4067550895095676928_n.jpg?alt=media&token=25c683ef-f8db-4c05-9dde-ffe990217d67')">
+                        </div>
+                        <div class="recomended_recommend_title" id="recommend2_name">MR.INK Bubble Milk Tea</div>
+                    </ons-carousel-item>
+                    <ons-carousel-item modifier="nodivider" id="recommend1R4" class="recomended_recommend">
+                        <div class="thumbnailR1"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/recommended%2F%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B8%A5%E0%B8%AD%E0%B8%A2%E0%B8%8B%E0%B8%B5%E0%B8%9F%E0%B8%B9%E0%B9%89%E0%B8%94%2F89950-001-600x400.jpg?alt=media&token=41207cf2-cadb-45b1-a98a-ad746d187768')">
+                        </div>
+                        <div class="recomended_recommend_title" id="recommend2_name">ศาลาลอยซีฟู้ด</div>
+                    </ons-carousel-item>
+                    <ons-carousel-item modifier="nodivider" id="recommend1R5" class="recomended_recommend">
+                        <div class="thumbnailR2"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/recommended%2F%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%89%E0%B8%A5%E0%B8%AD%E0%B8%87%2F141107164922.jpg?alt=media&token=bd9ad6b8-722f-4319-be0e-a329be9d9322')">
+                        </div>
+                        <div class="recomended_recommend_title" id="recommend2_name">ริมทางฉลอง</div>
+                    </ons-carousel-item>
+                </ons-carousel>
+            </ons-card>
+        </ons-row>
+    </div>
+    <br>
+    <!--search-->
     <p style="text-align: center; margin-top: 15px; margin-bottom: 10px;">
         <ons-search-input placeholder="Food or Restuarant">
         </ons-search-input>
     </p>
-    <p style="text-align: center"><b>Restaurants Category</b></p>
-    <!--แถวที่1: Thai,Chinese,Vietnam-->
-    <ons-row>
-        <ons-col width="5%">
-        </ons-col>
-        <ons-col width="30%">
+    <!--category-->
+    <div class="category">
+        <ons-row class="row justify-content-center" style= "background-color: white;">
             <ons-card style="width: 100%;">
-                <img src="image/category/thai.jpg" alt="Onsen UI" style="width: 100%">
-                <div class="title" style="text-align: center">
-                    Thai food
-                </div>
+                <p style="text-align: center"><b>Restaurants Category</b></p>
+                <ons-row class="row justify-content-center" style= "background-color: rgb(255, 242, 58);">
+                    <ons-col width="1%"></ons-col>
+                    <ons-col width="33%">
+                        <ons-card style="width: 100%;">
+                            <br>
+                            <ons-carousel-item modifier="nodivider" id="category1C1" class="category_cate">
+                                <div class="thumbnailC1"
+                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fthai.jpg?alt=media&token=eb688bd4-51dc-436c-ab47-11a5eea6af42')">
+                                </div>
+                                <div class="category_cate_title" id="category2_name">Thai food</div>
+                            </ons-carousel-item>
+                        </ons-card>
+                    </ons-col>
+                    <ons-col width="32%">
+                        <ons-card style="width: 100%;">
+                            <br>
+                            <ons-carousel-item modifier="nodivider" id="category1C2" class="category_cate">
+                                <div class="thumbnailC1"
+                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fchinese.jpg?alt=media&token=5367c2a5-9ec2-4b11-8a52-cc5e42cc86a0')">
+                                </div>
+                                <div class="category_cate_title" id="category2_name">Chinese food</div>
+                            </ons-carousel-item>
+                        </ons-card>
+                    </ons-col>
+                    <ons-col width="32%">
+                        <ons-card style="width: 100%;">
+                            <br>
+                            <ons-carousel-item modifier="nodivider" id="category1C3" class="category_cate">
+                                <div class="thumbnailC1"
+                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fvietnam.jpg?alt=media&token=f384962f-f79d-4b00-867e-ce8a76521f78')">
+                                </div>
+                                <div class="category_cate_title" id="category2_name">Vietnam food</div>
+                            </ons-carousel-item>
+                        </ons-card>
+                    </ons-col>
+                    <ons-col width="2%"></ons-col>
+                </ons-row>
+                <ons-row class="row justify-content-center" style= "background-color: rgb(255, 242, 58);">
+                    <ons-col width="1%"></ons-col>
+                    <ons-col width="33%">
+                        <ons-card style="width: 100%;">
+                            <br>
+                            <ons-carousel-item modifier="nodivider" id="category1C4" class="category_cate">
+                                <div class="thumbnailC1"
+                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fjapanese.jpg?alt=media&token=3e95ddcb-8d56-4761-b3dd-204478ae89dc')">
+                                </div>
+                                <div class="category_cate_title" id="category2_name">Japanese food</div>
+                            </ons-carousel-item>
+                        </ons-card>
+                    </ons-col>
+                    <ons-col width="32%">
+                        <ons-card style="width: 100%;">
+                            <br>
+                            <ons-carousel-item modifier="nodivider" id="category1C5" class="category_cate">
+                                <div class="thumbnailC1"
+                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Ffast.jpg?alt=media&token=0ad1819c-a908-4180-988e-58cbd49d4643')">
+                                </div>
+                                <div class="category_cate_title" id="category2_name">Fast food</div>
+                            </ons-carousel-item>
+                        </ons-card>
+                    </ons-col>
+                    <ons-col width="32%">
+                        <ons-card style="width: 100%;">
+                            <br>
+                            <ons-carousel-item modifier="nodivider" id="category1C6" class="category_cate">
+                                <div class="thumbnailC1"
+                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fsea.jpg?alt=media&token=627e351f-bbec-4ddc-a633-d2a7295ec7e2')">
+                                </div>
+                                <div class="category_cate_title" id="category2_name">Seafood</div>
+                            </ons-carousel-item>
+                        </ons-card>
+                    </ons-col>
+                    <ons-col width="2%"></ons-col>
+                </ons-row>
+                <ons-row class="row justify-content-center" style= "background-color: rgb(255, 242, 58);">
+                    <ons-col width="1%"></ons-col>
+                    <ons-col width="33%">
+                        <ons-card style="width: 100%;">
+                            <br>
+                            <ons-carousel-item modifier="nodivider" id="category1C7" class="category_cate">
+                                <div class="thumbnailC1"
+                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2FsweetsAppetizers.jpg?alt=media&token=60999287-2366-45b2-b6fa-ecb14f367858')">
+                                </div>
+                                <div class="category_cate_title" id="category2_name">Sweets/Appetizers</div>
+                            </ons-carousel-item>
+                        </ons-card>
+                    </ons-col>
+                    <ons-col width="32%">
+                        <ons-card style="width: 100%;">
+                            <br>
+                            <ons-carousel-item modifier="nodivider" id="category1C8" class="category_cate">
+                                <div class="thumbnailC1"
+                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fbeverage.jpg?alt=media&token=b003ab00-8a21-4582-8164-500041907f05')">
+                                </div>
+                                <div class="category_cate_title" id="category2_name">Beverage</div>
+                            </ons-carousel-item>
+                        </ons-card>
+                    </ons-col>
+                    <ons-col width="32%"></ons-col>
+                    <ons-col width="2%"></ons-col>
+                </ons-row>
             </ons-card>
-        </ons-col>
-        <ons-col width="30%">
-            <ons-card style="width: 100%;">
-                <img src="image/category/chinese.jpg" alt="Onsen UI" style="width: 100%">
-                <div class="title" style="text-align: center">
-                    Chinese food
-                </div>
-            </ons-card>
-        </ons-col>
-        <ons-col width="30%">
-            <ons-card style="width: 100%;">
-                <img src="image/category/vietnam.jpg" alt="Onsen UI" style="width: 100%">
-                <div class="title" style="text-align: center">
-                    Vietnam food
-                </div>
-            </ons-card>
-        </ons-col>
-        <ons-col width="5%">
-        </ons-col>
-    </ons-row>
-    <!--แถวที่2: Japanese,Fast,Seafood-->
-    <ons-row>
-        <ons-col width="5%">
-        </ons-col>
-        <ons-col width="30%">
-            <ons-card style="width: 100%">
-                <img src="image/category/japanese.jpg" alt="Onsen UI" style="width: 100%">
-                <div class="title" style="text-align: center">
-                    Japanese food
-                </div>
-            </ons-card>
-        </ons-col>
-        <ons-col width="30%">
-            <ons-card style="width: 100%">
-                <img src="image/category/fast.jpg" alt="Onsen UI" style="width: 100%">
-                <div class="title" style="text-align: center">
-                    Fast food
-                </div>
-            </ons-card>
-        </ons-col>
-        <ons-col width="30%">
-            <ons-card style="width: 100%">
-                <img src="image/category/sea.jpg" alt="Onsen UI" style="width: 100%">
-                <div class="title" style="text-align: center">
-                    Seafood
-                </div>
-            </ons-card>
-        </ons-col>
-        <ons-col width="5%">
-        </ons-col>
-    </ons-row>
-    <!--แถวที่3: Sweets/Appetizers,Beverage-->
-    <ons-row>
-        <ons-col width="5%">
-        </ons-col>
-        <ons-col width="30%">
-            <ons-card style="width: 100%">
-                <img src="image/category/sweetsAppetizers.jpg" alt="Onsen UI" style="width: 100%; height: 150%">
-                <div class="title" style="text-align: center">
-                    Sweets/Appetizers
-                </div>
-            </ons-card>
-        </ons-col>
-        <ons-col width="30%">
-            <ons-card style="width: 100%">
-                <img src="image/category/beverage.jpg" alt="Onsen UI" style="width: 100%">
-                <div class="title" style="text-align: center">
-                    Beverage
-                </div>
-            </ons-card>
-        </ons-col>
-        <ons-col width="30%">
-        </ons-col>
-        <ons-col width="5%">
-        </ons-col>
-    </ons-row>
+        </ons-row>
+    </div>
 </ons-page>
