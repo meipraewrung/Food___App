@@ -1,0 +1,79 @@
+
+.recomended_item {
+    padding-left: 10px;
+}
+.recomended_item_title {
+    font-size: 12px;
+    font-weight: bold;
+}
+.thumbnailR1 {
+    width: 120px;
+    height: 120px;
+    display: table;
+    background-color: rgba(0, 0, 0, 0.42);
+    background-size: 150%;
+}
+.thumbnailR2 {
+    width: 120px;
+    height: 120px;
+    display: table;
+    background-color: rgba(0, 0, 0, 0.42);
+    background-size: 160%;
+}
+.recomended_list {
+    height: 155px;
+}
+.recomended {
+    background-color: white;
+}
+
+.menu_list {
+    background: transparent;
+}
+.menu_item {
+    color: white;
+    font-size: 12px;
+}
+.menu_item ons-icon {
+    margin-right: 10px;
+    color: gray;
+    font-size: 16px;
+}
+
+.category_content {
+    background-color: white;
+}
+.category {
+    margin: 20px 0px;
+    padding: 0px 30px;
+}
+.category_wrapper {
+    max-width: 190px;
+    width: 95%;
+    height: 160px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    background-size: 240px;
+}
+.category_thumbnail {
+    text-align: center;
+    font-size: auto;
+    display: inline-block;
+    margin: 16px 0px;
+}
+.category_cate_title {
+    text-align: center;
+    font-size: auto;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: -1.5px -1.5px rgb(0, 0, 0), 3px 3px rgb(0, 0, 0),
+                    1.5px 1.5px rgb(0, 0, 0), -1.5px -1.5px rgb(0, 0, 0)
+}
+
+.login_logo {
+    width: 300px;
+    height: 300px;
+    display: table;
+    background-color: rgb(255, 255, 255);
+    background-size: 100%;
+}
