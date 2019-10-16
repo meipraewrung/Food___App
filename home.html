@@ -9,7 +9,7 @@
         <div class="center">foodService</div>
         <div class="right">
             <ons-toolbar-button id="homebtn">
-                <ons-icon icon="md-home"></ons-icon>
+                <ons-icon icon="md-home" onclick="fn.openHB()"></ons-icon>
             </ons-toolbar-button>
         </div>
         <br>
@@ -17,7 +17,7 @@
     <br>
     <!--recomended-->
     <div class="recomended">
-        <ons-row class="row justify-content-center">
+        <ons-row class="row justify-content-center" style="background-color: rgb(252, 235, 0);">
             <ons-card style="width: 100%;">
                 <p style="text-align: center"><b>Recomeded</b></p>
                 <br>
@@ -64,110 +64,81 @@
         </ons-search-input>
     </p>
     <!--category-->
-    <div class="category">
-        <ons-row class="row justify-content-center" style= "background-color: white;">
+    <div class="category_content">
+        <ons-row class="row justify-content-center" style="background-color: rgb(252, 235, 0);">
             <ons-card style="width: 100%;">
                 <p style="text-align: center"><b>Restaurants Category</b></p>
-                <ons-row class="row justify-content-center" style= "background-color: rgb(255, 242, 58);">
-                    <ons-col width="1%"></ons-col>
-                    <ons-col width="33%">
-                        <ons-card style="width: 100%;">
-                            <br>
-                            <ons-carousel-item modifier="nodivider" id="category1C1" class="category_cate">
-                                <div class="thumbnailC1"
-                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fthai.jpg?alt=media&token=eb688bd4-51dc-436c-ab47-11a5eea6af42')">
-                                </div>
+                <ons-row class="category" style="background-color: rgb(255, 255, 255);">
+                    <ons-col modifier="nodivider" id="category1C1">
+                        <div class="category_wrapper"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fthai.jpg?alt=media&token=eb688bd4-51dc-436c-ab47-11a5eea6af42')">
+                            <figure class="category_thumbnail">
                                 <div class="category_cate_title" id="category2_name">Thai food</div>
-                            </ons-carousel-item>
-                        </ons-card>
+                            </figure>
+                        </div>
                     </ons-col>
-                    <ons-col width="32%">
-                        <ons-card style="width: 100%;">
-                            <br>
-                            <ons-carousel-item modifier="nodivider" id="category1C2" class="category_cate">
-                                <div class="thumbnailC1"
-                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fchinese.jpg?alt=media&token=5367c2a5-9ec2-4b11-8a52-cc5e42cc86a0')">
-                                </div>
+                    <ons-col modifier="nodivider" id="category1C2">
+                        <div class="category_wrapper"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fchinese.jpg?alt=media&token=5367c2a5-9ec2-4b11-8a52-cc5e42cc86a0')">
+                            <figure class="category_thumbnail">
                                 <div class="category_cate_title" id="category2_name">Chinese food</div>
-                            </ons-carousel-item>
-                        </ons-card>
+                            </figure>
+                        </div>
                     </ons-col>
-                    <ons-col width="32%">
-                        <ons-card style="width: 100%;">
-                            <br>
-                            <ons-carousel-item modifier="nodivider" id="category1C3" class="category_cate">
-                                <div class="thumbnailC1"
-                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fvietnam.jpg?alt=media&token=f384962f-f79d-4b00-867e-ce8a76521f78')">
-                                </div>
+                </ons-row>
+                <ons-row class="category" style="background-color: rgb(255, 255, 255);">
+                    <ons-col modifier="nodivider" id="category1C3">
+                        <div class="category_wrapper"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fvietnam.jpg?alt=media&token=f384962f-f79d-4b00-867e-ce8a76521f78')">
+                            <figure class="category_thumbnail">
                                 <div class="category_cate_title" id="category2_name">Vietnam food</div>
-                            </ons-carousel-item>
-                        </ons-card>
+                            </figure>
+                        </div>
                     </ons-col>
-                    <ons-col width="2%"></ons-col>
-                </ons-row>
-                <ons-row class="row justify-content-center" style= "background-color: rgb(255, 242, 58);">
-                    <ons-col width="1%"></ons-col>
-                    <ons-col width="33%">
-                        <ons-card style="width: 100%;">
-                            <br>
-                            <ons-carousel-item modifier="nodivider" id="category1C4" class="category_cate">
-                                <div class="thumbnailC1"
-                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fjapanese.jpg?alt=media&token=3e95ddcb-8d56-4761-b3dd-204478ae89dc')">
-                                </div>
+                    <ons-col modifier="nodivider" id="category1C4">
+                        <div class="category_wrapper"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fjapanese.jpg?alt=media&token=3e95ddcb-8d56-4761-b3dd-204478ae89dc')">
+                            <figure class="category_thumbnail">
                                 <div class="category_cate_title" id="category2_name">Japanese food</div>
-                            </ons-carousel-item>
-                        </ons-card>
+                            </figure>
+                        </div>
                     </ons-col>
-                    <ons-col width="32%">
-                        <ons-card style="width: 100%;">
-                            <br>
-                            <ons-carousel-item modifier="nodivider" id="category1C5" class="category_cate">
-                                <div class="thumbnailC1"
-                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Ffast.jpg?alt=media&token=0ad1819c-a908-4180-988e-58cbd49d4643')">
-                                </div>
-                                <div class="category_cate_title" id="category2_name">Fast food</div>
-                            </ons-carousel-item>
-                        </ons-card>
-                    </ons-col>
-                    <ons-col width="32%">
-                        <ons-card style="width: 100%;">
-                            <br>
-                            <ons-carousel-item modifier="nodivider" id="category1C6" class="category_cate">
-                                <div class="thumbnailC1"
-                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fsea.jpg?alt=media&token=627e351f-bbec-4ddc-a633-d2a7295ec7e2')">
-                                </div>
-                                <div class="category_cate_title" id="category2_name">Seafood</div>
-                            </ons-carousel-item>
-                        </ons-card>
-                    </ons-col>
-                    <ons-col width="2%"></ons-col>
                 </ons-row>
-                <ons-row class="row justify-content-center" style= "background-color: rgb(255, 242, 58);">
-                    <ons-col width="1%"></ons-col>
-                    <ons-col width="33%">
-                        <ons-card style="width: 100%;">
-                            <br>
-                            <ons-carousel-item modifier="nodivider" id="category1C7" class="category_cate">
-                                <div class="thumbnailC1"
-                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2FsweetsAppetizers.jpg?alt=media&token=60999287-2366-45b2-b6fa-ecb14f367858')">
-                                </div>
-                                <div class="category_cate_title" id="category2_name">Sweets/Appetizers</div>
-                            </ons-carousel-item>
-                        </ons-card>
+                <ons-row class="category" style="background-color: rgb(255, 255, 255);">
+                    <ons-col modifier="nodivider" id="category1C5">
+                        <div class="category_wrapper"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Ffast.jpg?alt=media&token=0ad1819c-a908-4180-988e-58cbd49d4643')">
+                            <figure class="category_thumbnail">
+                                <div class="category_cate_title" id="category2_name">Fast food</div>
+                            </figure>
+                        </div>
                     </ons-col>
-                    <ons-col width="32%">
-                        <ons-card style="width: 100%;">
-                            <br>
-                            <ons-carousel-item modifier="nodivider" id="category1C8" class="category_cate">
-                                <div class="thumbnailC1"
-                                    style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fbeverage.jpg?alt=media&token=b003ab00-8a21-4582-8164-500041907f05')">
-                                </div>
+                    <ons-col modifier="nodivider" id="category1C6">
+                        <div class="category_wrapper"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fsea.jpg?alt=media&token=627e351f-bbec-4ddc-a633-d2a7295ec7e2')">
+                            <figure class="category_thumbnail">
+                                <div class="category_cate_title" id="category2_name">Seafood</div>
+                            </figure>
+                        </div>
+                    </ons-col>
+                </ons-row>
+                <ons-row class="category" style="background-color: rgb(255, 255, 255);">
+                    <ons-col modifier="nodivider" id="category1C7">
+                        <div class="category_wrapper"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2FsweetsAppetizers.jpg?alt=media&token=60999287-2366-45b2-b6fa-ecb14f367858')">
+                            <figure class="category_thumbnail">
+                                <div class="category_cate_title" id="category2_name">Sweets / Appetizers</div>
+                            </figure>
+                        </div>
+                    </ons-col>
+                    <ons-col modifier="nodivider" id="category1C8">
+                        <div class="category_wrapper"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fbeverage.jpg?alt=media&token=b003ab00-8a21-4582-8164-500041907f05')">
+                            <figure class="category_thumbnail">
                                 <div class="category_cate_title" id="category2_name">Beverage</div>
-                            </ons-carousel-item>
-                        </ons-card>
+                            </figure>
+                        </div>
                     </ons-col>
-                    <ons-col width="32%"></ons-col>
-                    <ons-col width="2%"></ons-col>
                 </ons-row>
             </ons-card>
         </ons-row>
