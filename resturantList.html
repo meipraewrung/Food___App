@@ -2,131 +2,74 @@
     <!--toolbar-->
     <ons-toolbar>
         <div class="left">
-            <ons-toolbar-button icon="md-menu" size="70px" style="color: rgb(0, 0, 0);"></ons-toolbar-button>
+            <ons-toolbar-button id="menubtn" onclick="fn.openMB()">
+                <ons-icon icon="md-menu"></ons-icon>
+            </ons-toolbar-button>
         </div>
         <div class="center">foodService</div>
         <div class="right">
-            <ons-icon icon="md-home" size="40px" style="color: rgb(0, 0, 0);"></ons-icon>
+            <ons-toolbar-button id="homebtn" onclick="fn.openHB('')">
+                <ons-icon icon="md-home"></ons-icon>
+            </ons-toolbar-button>
         </div>
         <br>
     </ons-toolbar>
-    <!--name-->
-    <p style="text-align: center"><b>Restaurants List</b></p>
-    <!--แถวที่1: กิตติก๋วยเตี๋ยวเป็ด,ศาลาลอยซีฟู้ด-->
-    <ons-row>
-        <ons-col width="15%">
-        </ons-col>
-        <ons-col width="30%">
+    <!--Restaurants List-->
+    <div class="category_content">
+        <ons-row class="row justify-content-center" style="background-color: rgb(252, 235, 0);">
             <ons-card style="width: 100%;">
-                <ons-row>
-                    <ons-col>
-                        <div class="title" style="text-align: center">
-                            กิตติก๋วยเตี๋ยวเป็ด
+                <p style="text-align: center"><b>Restaurants List</b></p>
+                <ons-row class="category" style="background-color: rgb(255, 255, 255);">
+                    <ons-col modifier="nodivider" id="category1C1">
+                        <div class="category_wrapper"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fthai.jpg?alt=media&token=eb688bd4-51dc-436c-ab47-11a5eea6af42')">
+                            <figure class="category_thumbnail">
+                                <div class="category_cate_title" id="category2_name">กิตติก๋วยเตี๋ยวเป็ด</div>
+                            </figure>
                         </div>
                     </ons-col>
-                    <ons-col width="70%">
-                        <img src="image/list/กิตติก๋วยเตี๋ยวเป็ด/4DQpjUtzLUwmJZZPEbFK8Kfd3M7jENxSpbh9QS3L0sMB.jpg"
-                            alt="Onsen UI" style="width: 100%">
-                    </ons-col>
-                </ons-row>
-                <p style="width: auto; margin: 0 auto;">
-                    <ons-button modifier="large--cta" onclick="menuKitti()">Menu</ons-button>
-                </p>
-            </ons-card>
-        </ons-col>
-        <ons-col width="10%">
-        </ons-col>
-        <ons-col width="30%">
-            <ons-card style="width: 100%;">
-                <ons-row>
-                    <ons-col>
-                        <div class="title" style="text-align: center">
-                            ศาลาลอยซีฟู้ด
+                    <ons-col modifier="nodivider" id="category1C2">
+                        <div class="category_wrapper"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fchinese.jpg?alt=media&token=5367c2a5-9ec2-4b11-8a52-cc5e42cc86a0')">
+                            <figure class="category_thumbnail">
+                                <div class="category_cate_title" id="category2_name">ศาลาลอยซีฟู้ด</div>
+                            </figure>
                         </div>
                     </ons-col>
-                    <ons-col width="70%">
-                        <img src="image/list/ศาลาลอยซีฟู้ด/89950-001-600x400.jpg" alt="Onsen UI" style="width: 100%">
-                    </ons-col>
                 </ons-row>
-                <p style="width: auto; margin: 0 auto;">
-                    <ons-button modifier="large--cta" onclick="menuSala()">Menu</ons-button>
-                </p>
-            </ons-card>
-        </ons-col>
-        <ons-col width="15%">
-        </ons-col>
-    </ons-row>
-    <!--แถวที่1: ป่าหล่ายซีฟู้ด,MR.INK-->
-    <ons-row>
-        <ons-col width="15%">
-        </ons-col>
-        <ons-col width="30%">
-            <ons-card style="width: 100%;">
-                <ons-row>
-                    <ons-col>
-                        <div class="title" style="text-align: center">
-                            ป่าหล่ายซีฟู้ด
+                <ons-row class="category" style="background-color: rgb(255, 255, 255);">
+                    <ons-col modifier="nodivider" id="category1C3">
+                        <div class="category_wrapper"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fvietnam.jpg?alt=media&token=f384962f-f79d-4b00-867e-ce8a76521f78')">
+                            <figure class="category_thumbnail">
+                                <div class="category_cate_title" id="category2_name">ป่าหล่ายซีฟู้ด</div>
+                            </figure>
                         </div>
                     </ons-col>
-                    <ons-col width="70%">
-                        <img src="image/list/ป่าหล่ายซีฟู้ด/ดาวน์โหลด.jpg" alt="Onsen UI" style="width: 100%">
-                    </ons-col>
-                </ons-row>
-                <p style="width: auto; margin: 0 auto;">
-                    <ons-button modifier="large--cta" onclick="menuPaHlay()">Menu</ons-button>
-                </p>
-            </ons-card>
-        </ons-col>
-        <ons-col width="10%">
-        </ons-col>
-        <ons-col width="30%">
-            <ons-card style="width: 100%;">
-                <ons-row>
-                    <ons-col>
-                        <div class="title" style="text-align: center">
-                            MR.INK Bubble Milk Tea
+                    <ons-col modifier="nodivider" id="category1C4">
+                        <div class="category_wrapper"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fjapanese.jpg?alt=media&token=3e95ddcb-8d56-4761-b3dd-204478ae89dc')">
+                            <figure class="category_thumbnail">
+                                <div class="category_cate_title" id="category2_name">MR.INK Bubble Milk Tea</div>
+                            </figure>
                         </div>
                     </ons-col>
-                    <ons-col width="70%">
-                        <img src="image/list/MR.INK Bubble Milk Tea/68908129_425969078015497_4067550895095676928_n.jpg"
-                            alt="Onsen UI" style="width: 100%">
-                    </ons-col>
                 </ons-row>
-                <p style="width: auto; margin: 0 auto;">
-                    <ons-button modifier="large--cta" onclick="menuINK()">Menu</ons-button>
-                </p>
-            </ons-card>
-        </ons-col>
-        <ons-col width="15%">
-        </ons-col>
-    </ons-row>
-    <!--แถวที่3: ร้านหวานละมุน-->
-    <ons-row>
-        <ons-col width="15%">
-        </ons-col>
-        <ons-col width="30%">
-            <ons-card style="width: 100%;">
-                <ons-row>
-                    <ons-col>
-                        <div class="title" style="text-align: center">
-                            ร้านหวานละมุน
+                <ons-row class="category" style="background-color: rgb(255, 255, 255);">
+                    <ons-col modifier="nodivider" id="category1C5">
+                        <div class="category_wrapper"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Ffast.jpg?alt=media&token=0ad1819c-a908-4180-988e-58cbd49d4643')">
+                            <figure class="category_thumbnail">
+                                <div class="category_cate_title" id="category2_name">ร้านหวานละมุน</div>
+                            </figure>
                         </div>
                     </ons-col>
-                    <ons-col width="70%">
-                        <img src="image/list/ร้านหวานละมุน/7dc63752fca0417f80b742420f409362.jpg" alt="Onsen UI"
-                            style="width: 100%">
+                    <ons-col modifier="nodivider" id="category1C6">
+                        <div class="category_wrapper">
+                        </div>
                     </ons-col>
                 </ons-row>
-                <p style="width: auto; margin: 0 auto;">
-                    <ons-button modifier="large--cta" onclick="menuHwanlamun()">Menu</ons-button>
-                </p>
             </ons-card>
-        </ons-col>
-        <ons-col width="10%">
-        </ons-col>
-        <ons-col width="30%">
-        </ons-col>
-        <ons-col width="15%">
-        </ons-col>
-    </ons-row>
+        </ons-row>
+    </div>
 </ons-page>
