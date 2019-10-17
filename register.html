@@ -1,35 +1,50 @@
 <ons-page id="registerPage">
-    <div class="dialog">
-        <div class="dialog-container">
-            <div class="card card--materiall" style="height: auto; padding: 1px 0 0 0;">
-                <div style="text-align: center; margin-top: 30px;">
-                    <p>
-                        <img src="image/foodS.png" alt="Onsen UI" style="width: 25%">
-                    </p>
-                    <p>
-                        <ons-input id="FLname" modifier="underbar" type="FLname" placeholder="Name Surname" float>
-                        </ons-input>
-                    </p>
-                    <p>
-                        <ons-input id="email" modifier="underbar" type="email" placeholder="E-mail" float>
-                        </ons-input>
-                    </p>
-                    <p>
-                        <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float>
-                        </ons-input>
-                    </p>
-                    <p>
-                        <ons-input id="phone" modifier="underbar" type="phone" placeholder="Phone number" float>
-                        </ons-input>
-                    </p>
-                    <p>
-                        <ons-input id="address" modifier="underbar" type="address" placeholder="Address" float>
-                        </ons-input>
-                    </p>
-                    <p style="width: auto; margin: 0 auto;">
-                        <ons-button class="large--cta" onclick="register()">Register</ons-button>
-                    </p>
-                    <br><br>
+    <div class="diareg">
+        <div class="dialreg-container">
+            <div class="card card--materiall">
+                <div style="text-align: center;">
+                    <div class="logoReg_content">
+                        <ons-row class="row">
+                            <ons-row class="logoReg" style="width: 100%; padding-right: 40px;">
+                                <ons-col modifier="nodivider" id="category1C1">
+                                    <div class="logo_regidter"
+                                        style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/foodS.png?alt=media&token=26c2a9e6-d57d-4ffa-b2e7-7342851c996d')">
+                                    </div>
+                                </ons-col>
+                            </ons-row>
+                        </ons-row>
+                    </div>
+                </div>
+                <div class="title" style="text-align: center;">
+                    <h1><b>Sign in</b></h1>
+                </div>
+                <div class="content">
+                    <div style="text-align: center; margin-top: 15px;">
+                        <p>
+                            <ons-input id="FLname" modifier="underbar" type="FLname" placeholder="Name Surname" float>
+                            </ons-input>
+                        </p>
+                        <p>
+                            <ons-input id="email" modifier="underbar" type="email" placeholder="E-mail" float>
+                            </ons-input>
+                        </p>
+                        <p>
+                            <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float>
+                            </ons-input>
+                        </p>
+                        <p>
+                            <ons-input id="phone" modifier="underbar" type="phone" placeholder="Phone number" float>
+                            </ons-input>
+                        </p>
+                        <p>
+                            <ons-input id="address" modifier="underbar" type="address" placeholder="Address" float>
+                            </ons-input>
+                        </p>
+                        <p style="margin-top: 10px;">
+                            <ons-button id="signinbtn"><b>Sign in</b></ons-button>
+                        </p>
+                        <p style="margin: 36px 0;"></p>
+                    </div>
                 </div>
             </div>
         </div>
