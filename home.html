@@ -8,8 +8,8 @@
         </div>
         <div class="center">foodService</div>
         <div class="right">
-            <ons-toolbar-button id="homebtn">
-                <ons-icon icon="md-home" onclick="fn.openHB()"></ons-icon>
+            <ons-toolbar-button id="userbtn">
+                <ons-icon icon="fa-user-circle"></ons-icon>
             </ons-toolbar-button>
         </div>
         <br>
@@ -24,7 +24,7 @@
     <p style="text-align: center; margin-top: 15px; margin-bottom: 10px;">
         <ons-row>
             <ons-col>
-                <ons-button modifier="large" id="registerbtn"
+                <ons-button modifier="large" id="resListbtn"
                     style="background-color: rgb(174, 255, 45); color: rgb(0, 0, 0); margin-top: 10px;">
                     <b>Restaurants List</b>
                 </ons-button>
@@ -40,31 +40,31 @@
                 <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable
                     item-width="130px" class="recomended_list" id="carouselR">
                     <ons-carousel-item modifier="nodivider" id="recommend1R1" class="recomended_recommend">
-                        <div class="thumbnailR1"
+                        <div class="thumbnailR1" id="KittiDuckNoodle"
                             style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/recommended%2F%E0%B8%81%E0%B8%B4%E0%B8%95%E0%B8%95%E0%B8%B4%E0%B8%81%E0%B9%8B%E0%B8%A7%E0%B8%A2%E0%B9%80%E0%B8%95%E0%B8%B5%E0%B9%8B%E0%B8%A2%E0%B8%A7%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%94%2F4DQpjUtzLUwmJZZPEbFK8Kfd3M7jENxSpbh9QS3L0sMB.jpg?alt=media&token=bd869097-9d23-47e2-a154-6521765dbbe0')">
                         </div>
                         <div class="recomended_recommend_title" id="recommend2_name">กิตติก๋วยเตี๋ยวเป็ด</div>
                     </ons-carousel-item>
                     <ons-carousel-item modifier="nodivider" id="recommend1R2" class="recomended_recommend">
-                        <div class="thumbnailR1"
+                        <div class="thumbnailR1" id="SweetLamoon"
                             style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/recommended%2F%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AB%E0%B8%A7%E0%B8%B2%E0%B8%99%E0%B8%A5%E0%B8%B0%E0%B8%A1%E0%B8%B8%E0%B8%99%2F7dc63752fca0417f80b742420f409362.jpg?alt=media&token=bdfda349-6328-416e-bf65-40461a88efe1')">
                         </div>
                         <div class="recomended_recommend_title" id="recommend2_name">ร้านหวานละมุน</div>
                     </ons-carousel-item>
                     <ons-carousel-item modifier="nodivider" id="recommend1R3" class="recomended_recommend">
-                        <div class="thumbnailR1"
+                        <div class="thumbnailR1" id="Mr.INK"
                             style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/recommended%2FMR.INK%20Bubble%20Milk%20Tea%2F68908129_425969078015497_4067550895095676928_n.jpg?alt=media&token=25c683ef-f8db-4c05-9dde-ffe990217d67')">
                         </div>
                         <div class="recomended_recommend_title" id="recommend2_name">MR.INK Bubble Milk Tea</div>
                     </ons-carousel-item>
                     <ons-carousel-item modifier="nodivider" id="recommend1R4" class="recomended_recommend">
-                        <div class="thumbnailR1"
+                        <div class="thumbnailR1" id="SalaLoi"
                             style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/recommended%2F%E0%B8%A8%E0%B8%B2%E0%B8%A5%E0%B8%B2%E0%B8%A5%E0%B8%AD%E0%B8%A2%E0%B8%8B%E0%B8%B5%E0%B8%9F%E0%B8%B9%E0%B9%89%E0%B8%94%2F89950-001-600x400.jpg?alt=media&token=41207cf2-cadb-45b1-a98a-ad746d187768')">
                         </div>
                         <div class="recomended_recommend_title" id="recommend2_name">ศาลาลอยซีฟู้ด</div>
                     </ons-carousel-item>
                     <ons-carousel-item modifier="nodivider" id="recommend1R5" class="recomended_recommend">
-                        <div class="thumbnailR2"
+                        <div class="thumbnailR2" id="RimThangChalong"
                             style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/recommended%2F%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%89%E0%B8%A5%E0%B8%AD%E0%B8%87%2F141107164922.jpg?alt=media&token=bd9ad6b8-722f-4319-be0e-a329be9d9322')">
                         </div>
                         <div class="recomended_recommend_title" id="recommend2_name">ริมทางฉลอง</div>
@@ -82,7 +82,7 @@
                     <ons-col modifier="nodivider" id="category1C1">
                         <div class="category_wrapper"
                             style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fthai.jpg?alt=media&token=eb688bd4-51dc-436c-ab47-11a5eea6af42')">
-                            <figure class="category_thumbnail">
+                            <figure class="category_thumbnail" id="thaibtn">
                                 <div class="category_cate_title" id="category2_name">Thai food</div>
                             </figure>
                         </div>
@@ -90,7 +90,7 @@
                     <ons-col modifier="nodivider" id="category1C2">
                         <div class="category_wrapper"
                             style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fchinese.jpg?alt=media&token=5367c2a5-9ec2-4b11-8a52-cc5e42cc86a0')">
-                            <figure class="category_thumbnail">
+                            <figure class="category_thumbnail" id="chinesebtn">
                                 <div class="category_cate_title" id="category2_name">Chinese food</div>
                             </figure>
                         </div>
@@ -100,7 +100,7 @@
                     <ons-col modifier="nodivider" id="category1C3">
                         <div class="category_wrapper"
                             style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fvietnam.jpg?alt=media&token=f384962f-f79d-4b00-867e-ce8a76521f78')">
-                            <figure class="category_thumbnail">
+                            <figure class="category_thumbnail" id="vietnambtn">
                                 <div class="category_cate_title" id="category2_name">Vietnam food</div>
                             </figure>
                         </div>
@@ -108,7 +108,7 @@
                     <ons-col modifier="nodivider" id="category1C4">
                         <div class="category_wrapper"
                             style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fjapanese.jpg?alt=media&token=3e95ddcb-8d56-4761-b3dd-204478ae89dc')">
-                            <figure class="category_thumbnail">
+                            <figure class="category_thumbnail" id="japanesebtn">
                                 <div class="category_cate_title" id="category2_name">Japanese food</div>
                             </figure>
                         </div>
@@ -118,7 +118,7 @@
                     <ons-col modifier="nodivider" id="category1C5">
                         <div class="category_wrapper"
                             style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Ffast.jpg?alt=media&token=0ad1819c-a908-4180-988e-58cbd49d4643')">
-                            <figure class="category_thumbnail">
+                            <figure class="category_thumbnail" id="fastbtn">
                                 <div class="category_cate_title" id="category2_name">Fast food</div>
                             </figure>
                         </div>
@@ -126,7 +126,7 @@
                     <ons-col modifier="nodivider" id="category1C6">
                         <div class="category_wrapper"
                             style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fsea.jpg?alt=media&token=627e351f-bbec-4ddc-a633-d2a7295ec7e2')">
-                            <figure class="category_thumbnail">
+                            <figure class="category_thumbnail" id="seabtn">
                                 <div class="category_cate_title" id="category2_name">Seafood</div>
                             </figure>
                         </div>
@@ -136,7 +136,7 @@
                     <ons-col modifier="nodivider" id="category1C7">
                         <div class="category_wrapper"
                             style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2FsweetsAppetizers.jpg?alt=media&token=60999287-2366-45b2-b6fa-ecb14f367858')">
-                            <figure class="category_thumbnail">
+                            <figure class="category_thumbnail" id="sweetbtn">
                                 <div class="category_cate_title" id="category2_name">Sweets / Appetizers</div>
                             </figure>
                         </div>
@@ -144,7 +144,7 @@
                     <ons-col modifier="nodivider" id="category1C8">
                         <div class="category_wrapper"
                             style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/category%2Fbeverage.jpg?alt=media&token=b003ab00-8a21-4582-8164-500041907f05')">
-                            <figure class="category_thumbnail">
+                            <figure class="category_thumbnail" id="beveragebtn">
                                 <div class="category_cate_title" id="category2_name">Beverage</div>
                             </figure>
                         </div>
