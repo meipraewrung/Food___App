@@ -210,7 +210,7 @@ document.addEventListener('init', function (event) {
   if (page.id === 'registerPage') {
     console.log("registerPage");
     $("#signinbtn").click(function () {
-      var email = document.getElementById('username').value;
+      var email = document.getElementById('email').value;
       var password = document.getElementById('password').value;
       firebase.auth().createUserWithEmailAndPassword(email, password).then(function () {
         content.load('home.html');
