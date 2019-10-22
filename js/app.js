@@ -145,6 +145,9 @@ document.addEventListener('init', function (event) {
 
   if (page.id === 'KittiDuckNoodlePage') {
     console.log("KittiDuckNoodlePage");
+    $("#cartConf").click(function () {
+      $("#content")[0].load("orderConfirmation.html");
+    });
     $("#BackCatebtn").click(function () {
       $("#content")[0].load("resturantList/resturantListALL.html");
     });
@@ -153,6 +156,9 @@ document.addEventListener('init', function (event) {
     });
   } else if (page.id === 'Mr_INKPage') {
     console.log("Mr_INKPage");
+    $("#cartConf").click(function () {
+      $("#content")[0].load("orderConfirmation.html");
+    });
     $("#BackCatebtn").click(function () {
       $("#content")[0].load("resturantList/resturantListALL.html");
     });
@@ -161,6 +167,9 @@ document.addEventListener('init', function (event) {
     });
   } else if (page.id === 'PaLaiPage') {
     console.log("PaLaiPage");
+    $("#cartConf").click(function () {
+      $("#content")[0].load("orderConfirmation.html");
+    });
     $("#BackCatebtn").click(function () {
       $("#content")[0].load("resturantList/resturantListALL.html");
     });  
@@ -169,6 +178,9 @@ document.addEventListener('init', function (event) {
     });
   } else if (page.id === 'RimThangChalongPage') {
     console.log("RimThangChalongPage");
+    $("#cartConf").click(function () {
+      $("#content")[0].load("orderConfirmation.html");
+    });
     $("#BackCatebtn").click(function () {
       $("#content")[0].load("resturantList/resturantListALL.html");
     });
@@ -177,6 +189,9 @@ document.addEventListener('init', function (event) {
     });
   } else if (page.id === 'SalaLoiPage') {
     console.log("SalaLoiPage");
+    $("#cartConf").click(function () {
+      $("#content")[0].load("orderConfirmation.html");
+    });
     $("#BackCatebtn").click(function () {
       $("#content")[0].load("resturantList/resturantListALL.html");
     });
@@ -185,6 +200,9 @@ document.addEventListener('init', function (event) {
     });
   } else if (page.id === 'SweetLamoonPage') {
     console.log("SweetLamoonPage");
+    $("#cartConf").click(function () {
+      $("#content")[0].load("orderConfirmation.html");
+    });
     $("#BackCatebtn").click(function () {
       $("#content")[0].load("resturantList/resturantListALL.html");
     });
