@@ -14,6 +14,24 @@ firebase.initializeApp(firebaseConfig);
 //firebase.analytics();
 
 var db = firebase.firestore();
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    // var displayName = user.displayName;
+     var email = user.email;
+    // var emailVerified = user.emailVerified;
+    // var photoURL = user.photoURL;
+    // var isAnonymous = user.isAnonymous;
+    // var uid = user.uid;
+    // var providerData = user.providerData;
+    // ...
+    console.log("user :",email, " signed in");
+    
+  } else {
+    // User is signed out.
+    // ...
+  }
+});
 
 document.addEventListener('init', function (event) {
   var page = event.target;
@@ -106,17 +124,32 @@ document.addEventListener('init', function (event) {
 
   if (page.id === 'BeveragePage') {
     console.log("BeveragePage");
+    $("#BackHomebtn").click(function () {
+      $("#content")[0].load("home.html");
+    });
     $("#Mr_INK").click(function () {
       $("#content")[0].load("resturantMenu/Mr_INK.html");
     });
   } else if (page.id === 'ChineseFoodPage') {
     console.log("ChineseFoodPage");
+    $("#BackHomebtn").click(function () {
+      $("#content")[0].load("home.html");
+    });
   } else if (page.id === 'FastFoodPage') {
     console.log("FastFoodPage");
+    $("#BackHomebtn").click(function () {
+      $("#content")[0].load("home.html");
+    });
   } else if (page.id === 'JapaneseFoodPage') {
     console.log("JapaneseFoodPage");
+    $("#BackHomebtn").click(function () {
+      $("#content")[0].load("home.html");
+    });
   } else if (page.id === 'SeafoodPage') {
     console.log("SeafoodPage");
+    $("#BackHomebtn").click(function () {
+      $("#content")[0].load("home.html");
+    });
     $("#PaLai").click(function () {
       $("#content")[0].load("resturantMenu/PaLai.html");
     });
@@ -128,6 +161,9 @@ document.addEventListener('init', function (event) {
     });
   } else if (page.id === 'Sweets&AppetizersPage') {
     console.log("Sweets&AppetizersPage");
+    $("#BackHomebtn").click(function () {
+      $("#content")[0].load("home.html");
+    });
     $("#RimThangChalong").click(function () {
       $("#content")[0].load("resturantMenu/RimThangChalong.html");
     });
@@ -136,11 +172,17 @@ document.addEventListener('init', function (event) {
     });
   } else if (page.id === 'ThaiFoodPage') {
     console.log("ThaiFoodPagee");
+    $("#BackHomebtn").click(function () {
+      $("#content")[0].load("home.html");
+    });
     $("#KittiDuckNoodle").click(function () {
       $("#content")[0].load("resturantMenu/KittiDuckNoodle.html");
     });
   } else if (page.id === 'VietnamFoodPage') {
     console.log("VietnamFoodPage");
+    $("#BackHomebtn").click(function () {
+      $("#content")[0].load("home.html");
+    });
   }
 
   if (page.id === 'KittiDuckNoodlePage') {
@@ -223,6 +265,9 @@ document.addEventListener('init', function (event) {
 
   if (page.id === 'registerPage') {
     console.log("registerPage");
+    $("#backloginbtn").click(function () {
+      $("#content")[0].load("login.html");
+    });
     $("#signinbtn").click(function () {
       var email = document.getElementById('email').value;
       var password = document.getElementById('password').value;
@@ -246,15 +291,18 @@ document.addEventListener('init', function (event) {
     console.log("loginPage");
 
     $("#googlebtn").click(function () {
-      //console.log("gg");
+      console.log("gg");
       var provider = new firebase.auth.GoogleAuthProvider();
-      firebase.auth().signInWithPopup(provider).then(function (result) {
-        // This gives you a Google Access Token. You can use it to access the Google API.
-        var token = result.credential.accessToken;
+      firebase.auth().signInWithRedirect(provider);
+      firebase.auth().getRedirectResult().then(function(result) {
+        if (result.credential) {
+          // This gives you a Google Access Token. You can use it to access the Google API.
+          var token = result.credential.accessToken;
+          // ...
+        }
         // The signed-in user info.
         var user = result.user;
-        content.load('home.html');
-      }).catch(function (error) {
+      }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
         var errorMessage = error.message;
@@ -262,6 +310,7 @@ document.addEventListener('init', function (event) {
         var email = error.email;
         // The firebase.auth.AuthCredential type that was used.
         var credential = error.credential;
+        // ...
       });
     });
 
