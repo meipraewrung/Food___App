@@ -2,77 +2,39 @@
     <!--toolbar-->
     <ons-toolbar>
         <div class="left">
-            <ons-toolbar-button icon="md-menu" size="70px" style="color: rgb(0, 0, 0);"></ons-toolbar-button>
+            <ons-toolbar-button id="menubtn" onclick="fn.openMB()">
+                <ons-icon icon="md-menu"></ons-icon>
+            </ons-toolbar-button>
         </div>
         <div class="center">foodService</div>
         <div class="right">
-            <ons-icon icon="md-home" size="40px" style="color: rgb(0, 0, 0);"></ons-icon>
+            <ons-toolbar-button id="BackHomebtn">
+                <ons-icon icon="md-home"></ons-icon>
+            </ons-toolbar-button>
         </div>
         <br>
     </ons-toolbar>
-    <!--name-->
-    <p style="text-align: center"><b>Ordered Item</b></p>
-
-    <ons-row>
-        <ons-card style="width: 100%;">
-            <ons-row width="100%">
-                <ons-col width="20%">
-                </ons-col>
-                <ons-col width="50%">
-                    <div class="title" style="text-align: center">
-                        กิตติก๋วยเตี๋ยวเป็ด
+    <!--OrderedItem-->
+    <div class="category_content">
+        <ons-row class="row justify-content-center" style="background-color: rgba(252, 235, 0, 0.781);">
+            <ons-card style="width: 100%;">
+                <!--name-->
+                <!-- Modal -->
+                <div class="modal-header">
+                    <p class="modal-title" id="exampleModalLabel" style="text-align: center"><b>Ordered Item</b></p>
+                </div>
+                <center>
+                    <div class="modal-body">
+                        <table class="show-cart table"></table>
+                        <div>ราคารวม : <span class="total-cart"></span> บาท</div>
                     </div>
-                    <br><br>
-                    <ons-row style="text-align: center">
-                        <ons-col width="20%">จำนวน
-                        </ons-col>
-                        <ons-col width="60%">เมนู
-                        </ons-col>
-                        <ons-col width="20%">ราคา
-                        </ons-col>
-                    </ons-row>
-                    <ons-row style="text-align: center">
-                        <ons-col width="20%">
-                            <p>2</p>
-                        </ons-col>
-                        <ons-col width="60%">
-                            <p>
-                                <ons-button>-</ons-button>ก๋วยเตี๋ยวบะหมี่น้ำเป็ดพะโล้ 50 บาท <ons-button>+
-                                </ons-button>
-                            </p>
-                        </ons-col>
-                        <ons-col width="20%">
-                            <p>100</p>
-                        </ons-col>
-                    </ons-row>
-                    <ons-row style="text-align: center">
-                        <ons-col width="20%">
-                            <p>1</p>
-                        </ons-col>
-                        <ons-col width="60%">
-                            <p>
-                                <ons-button>-</ons-button>ก๋วยเตี๋ยวเส้นหมี่เเห้งเป็ดพะโล้ 50 บาท<ons-button>+
-                                </ons-button>
-                            </p>
-                        </ons-col>
-                        <ons-col width="20%">
-                            <p>50</p>
-                        </ons-col>
-                    </ons-row>
-                    <br>
-                    <div class="title" style="text-align: center">
-                        รวม 200 บาท
-                    </div>
-                </ons-col>
-                <ons-col width="20%">
-                </ons-col>
-                <ons-col width="10%">
-                    <ons-button class="large--cta" onclick="Delete()">Delete order</ons-button>
-                </ons-col>
-            </ons-row>
-        </ons-card>
-    </ons-row>
-    <ons-col>
-        <ons-button modifier="large" onclick="confirm()">Confirm order</ons-button>
-    </ons-col>
+                </center>
+                <div style="text-align: center">
+                    <!-- <ons-button style="background-color:crimson" data-dismiss="modal">Close</ons-button> -->
+                    <ons-button class="ordernowbtn" style="background-color: rgb(17, 145, 250)">Order now</ons-button>
+                    <ons-button class="clear-cart" style="background-color: rgb(255, 0, 0)">Clear Order</ons-button>
+                </div>
+            </ons-card>
+        </ons-row>
+    </div>
 </ons-page>

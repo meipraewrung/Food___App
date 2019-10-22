@@ -1,45 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+
   <title>foodService</title>
 
+  <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="lib/onsen/css/onsenui.css">
   <link rel="stylesheet" href="lib/onsen/css/onsen-css-components.css">
+  <script>
+    // CODELAB: Register service worker.
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js')
+          .then((reg) => {
+            console.log('Service worker registered.', reg);
+          });
+      });
+    }
+  </script>
+  <!-- CODELAB: Add link rel manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <meta name="google-signin-scope" content="profile email">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  <script src="lib/onsen/js/onsenui.js"></script>
+  <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+
+  <script src="js/app.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <!--<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>-->
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <!--<script src="https://www.gstatic.com/firebasejs/7.2.0/firebase-analytics.js"></script>-->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <!-- <script src="/__/firebase/7.2.0/firebase-app.js"></script> -->
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <!-- <script src="/__/firebase/7.2.0/firebase-analytics.js"></script> -->
+  <!-- Initialize Firebase -->
+  <!-- <script src="/__/firebase/init.js"></script> -->
 
 </head>
 
 <body>
 
+
   <!-- First navigation component: Navigator. This will remain always on top of the app. -->
-  <ons-navigator id="myNavigator" page="splitter.html">
-  </ons-navigator>
-
-
-  <!-- Second navigation component: Splitter. This will disappear if the first component changes its content. -->
+  <ons-navigator id="myNavigator" page="splitter.html"></ons-navigator>
   <template id="splitter.html">
     <ons-page>
       <ons-splitter id="mySplitter">
-        <ons-splitter-side id="sidemenu" page="menu.html" swipeable width="250px" collapse swipe-target-width="50px">
+        <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
+          <ons-page id="menubtn">
+            <ons-list-title>foodService</ons-list-title>
+            <ons-list>
+              <ons-list-item tappable style="cursor: pointer" modifier="longdivider chevron"
+                onclick="fn.load('home.html')">
+                <div class="left">
+                  <ons-icon icon="fa-home" style="color: grey;"></ons-icon>
+                </div>
+                <div class="center" id="home">Home</div>
+              </ons-list-item>
+              <ons-list-item tappable style="cursor: pointer" modifier="longdivider chevron"
+                onclick="fn.load('orderConfirmation.html')">
+                <div class="left">
+                  <ons-icon icon="fa-file" style="color: grey;"></ons-icon>
+                </div>
+                <div class="center" id="order">Order</div>
+              </ons-list-item>
+              <ons-list-item tappable style="cursor: pointer" modifier="longdivider chevron"
+                onclick="fn.load('login.html')">
+                <div class="left">
+                  <ons-icon icon="fa-sign-in" style="color: grey;"></ons-icon>
+                </div>
+                <div class="center" id="logout">Sign out</div>
+              </ons-list-item>
+            </ons-list>
+          </ons-page>
         </ons-splitter-side>
-        <ons-splitter-content page="login.html" id="content">
-        </ons-splitter-content>
+        <ons-splitter-content id="content" page="home.html"></ons-splitter-content>
       </ons-splitter>
     </ons-page>
   </template>
-  
-
-
-  <script src="lib/onsen/js/onsenui.js"></script>
-  <script src="lib/jquery/jquery-3.4.1.min.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
-  <script src="js/app.js"></script>
 
 </body>
 
 </html>
-
-
-
-
