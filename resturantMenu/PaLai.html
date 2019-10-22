@@ -1,69 +1,266 @@
 <ons-page id="PaLaiPage">
-        <!--toolbar-->
-        <ons-toolbar>
-            <div class="left">
-                <ons-toolbar-button id="BackCatebtn">
-                    <ons-icon icon="fa-arrow-left">Back</ons-icon>
-                </ons-toolbar-button>
-            </div>
-            <div class="center">foodService</div>
-            <div class="right">
-                <ons-toolbar-button id="BackHomebtn">
-                    <ons-icon icon="md-home"></ons-icon>
-                </ons-toolbar-button>
-            </div>
-            <br>
-        </ons-toolbar>
-        <!--PaLai-->
-        <div class="resMenu_content" id="PaLai">
-            <ons-row class="row justify-content-center" style="background-color: rgba(252, 235, 0, 0.781);">
-                <ons-card style="width: 100%;">
-                    <p style="text-align: center"><b>ป่าหล่ายซีฟู้ด</b></p>
-                    <ons-row class="resMenu" style="background-color: rgb(255, 255, 255);">
-                        <ons-col modifier="nodivider" id="resMenu1M1">
-                            <div class="resMenu_wrapper" id="Url"
-                                style="background-image: url('')">
-                            </div>
-                        </ons-col>
-                    </ons-row>
-                    <!--resMenuUrl-->
-                    <div class="resMenuUrl">
-                        <ons-row class="row justify-content-center" style="background-color: rgb(252, 235, 0);">
-                            <ons-card style="width: 100%;">
-                                <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable
-                                    item-width="130px" class="resMenuUrl_list" id="carouselR">
-                                    <ons-carousel-item modifier="nodivider" id="Url" class="resMenuUrl_recommend">
-                                        <div class="resMenuUrl_thumbnail1"
-                                            style="background-image: url('')">
-                                        </div>
-                                    </ons-carousel-item>
-                                    <ons-carousel-item modifier="nodivider" id="Url" class="resMenuUrl_recommend">
-                                        <div class="resMenuUrl_thumbnail2"
-                                            style="background-image: url('')">
-                                        </div>
-                                    </ons-carousel-item>
-                                    <ons-carousel-item modifier="nodivider" id="Url" class="resMenuUrl_recommend">
-                                        <div class="resMenuUrl_thumbnail3"
-                                            style="background-image: url('')">
-                                        </div>
-                                    </ons-carousel-item>
-                                    <ons-carousel-item modifier="nodivider" id="Url" class="resMenuUrl_recommend">
-                                        <div class="resMenuUrl_thumbnail4"
-                                            style="background-image: url('')">
-                                        </div>
-                                    </ons-carousel-item>
-                                </ons-carousel>
-                            </ons-card>
-                        </ons-row>
-                    </div>
-                    <div>
-                        <p style="text-align: center; margin-top: 40px;"><b>รายการอาหาร</b></p>
-                    </div>
-                    <ons-row>
-                        <ons-col>
-                        </ons-col>
-                    </ons-row>
-                </ons-card>
-            </ons-row>
+    <!--toolbar-->
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button id="BackCatebtn">
+                <ons-icon icon="fa-arrow-left">Back</ons-icon>
+            </ons-toolbar-button>
         </div>
-    </ons-page>
+        <div class="center">foodService</div>
+        <div class="right">
+            <ons-toolbar-button id="BackHomebtn">
+                <ons-icon icon="md-home"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <br>
+    </ons-toolbar>
+    <!--PaLai-->
+    <div class="resMenu_content" id="PaLai">
+        <ons-row class="row justify-content-center" style="background-color: rgba(252, 235, 0, 0.781);">
+            <ons-card style="width: 100%;">
+                <p style="text-align: center"><b>ป่าหล่ายซีฟู้ด</b></p>
+                <ons-row class="resMenu" style="background-color: rgb(255, 255, 255);">
+                    <ons-col modifier="nodivider" id="resMenu1M1">
+                        <div class="resMenu_wrapper" id="Url"
+                            style="background-image: url('https://firebasestorage.googleapis.com/v0/b/foodapp-93536.appspot.com/o/list%2F%E0%B8%9B%E0%B9%88%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B8%8B%E0%B8%B5%E0%B8%9F%E0%B8%B9%E0%B9%89%E0%B8%94%2F%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B8%99%E0%B9%8C%E0%B9%82%E0%B8%AB%E0%B8%A5%E0%B8%94.jpg?alt=media&token=c33651d5-c4f0-41fc-ba42-84d5cdb9db31')">
+                        </div>
+                    </ons-col>
+                </ons-row>
+                <!--resMenuUrl-->
+                <div class="resMenuUrl">
+                    <ons-row class="row justify-content-center" style="background-color: rgb(252, 235, 0);">
+                        <ons-card style="width: 100%;">
+                            <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable
+                                item-width="130px" class="resMenuUrl_list" id="carouselR">
+                                <ons-carousel-item modifier="nodivider" id="Url" class="resMenuUrl_recommend">
+                                    <div class="resMenuUrl_thumbnail1" style="background-image: url('')">
+                                    </div>
+                                </ons-carousel-item>
+                                <ons-carousel-item modifier="nodivider" id="Url" class="resMenuUrl_recommend">
+                                    <div class="resMenuUrl_thumbnail2" style="background-image: url('')">
+                                    </div>
+                                </ons-carousel-item>
+                                <ons-carousel-item modifier="nodivider" id="Url" class="resMenuUrl_recommend">
+                                    <div class="resMenuUrl_thumbnail3" style="background-image: url('')">
+                                    </div>
+                                </ons-carousel-item>
+                                <ons-carousel-item modifier="nodivider" id="Url" class="resMenuUrl_recommend">
+                                    <div class="resMenuUrl_thumbnail4" style="background-image: url('')">
+                                    </div>
+                                </ons-carousel-item>
+                            </ons-carousel>
+                        </ons-card>
+                    </ons-row>
+                </div>
+                <div class="resMenu">
+                    <ons-row class="row justify-content-center" style="background-color: rgb(252, 235, 0);">
+                        <ons-card style="width: 100%;">
+                            <ons-carousel auto-scroll auto-scroll-ratio="0.5" auto-refresh swipeable overscrollable
+                                item-width="130px" class="resMenu_list" id="carouselRM">
+                                <ons-row id="All">
+                                    <ons-col id="=name">
+                                        <center>
+                                            <p style="text-align: center; margin-top: 30px; font-size: 25px;">
+                                                <b>รายการอาหาร</b></p>
+                                            <ons-row id="menu">
+                                                <ons-col>
+                                                    <div class="card" style="width: 100%;">
+                                                        <div class="card-block">
+                                                            <ons-row>
+                                                                <ons-col width="75%">
+                                                                    <h4 class="card-title">ห่อหมกปลามง
+                                                                    </h4>
+                                                                    <p class="card-text">20 บาท</p>
+                                                                </ons-col>
+                                                                <ons-col width="25%">
+                                                                    <ons-button
+                                                                        style="background-color: rgb(174, 255, 45);"><a
+                                                                            data-name="ห่อหมกปลามง" data-price="20"
+                                                                            class="add-to-cart"
+                                                                            style="color: rgb(0, 0, 0)">Add</a>
+                                                                    </ons-button>
+                                                                </ons-col>
+                                                            </ons-row>
+                                                        </div>
+                                                    </div>
+                                                </ons-col>
+                                                <ons-col>
+                                                    <div class="card" style="width: 100%;">
+                                                        <div class="card-block">
+                                                            <ons-row>
+                                                                <ons-col width="75%">
+                                                                    <h4 class="card-title">
+                                                                        ยอดมะระผัดน้ำมันหอย</h4>
+                                                                    <p class="card-text">90 บาท</p>
+                                                                </ons-col>
+                                                                <ons-col width="25%">
+                                                                    <ons-button
+                                                                        style="background-color: rgb(174, 255, 45)"><a
+                                                                            data-name="ยอดมะระผัดน้ำมันหอย"
+                                                                            data-price="90" class="add-to-cart"
+                                                                            style="color: rgb(0, 0, 0)">Add</a>
+                                                                    </ons-button>
+                                                                </ons-col>
+                                                            </ons-row>
+                                                        </div>
+                                                    </div>
+                                                </ons-col>
+                                            </ons-row>
+                                            <ons-row id="menu">
+                                                <ons-col>
+                                                    <div class="card" style="width: 100%;">
+                                                        <div class="card-block">
+                                                            <ons-row>
+                                                                <ons-col width="75%">
+                                                                    <h4 class="card-title">
+                                                                        แกงส้มปลาใส่ยอดมะพร้าว</h4>
+                                                                    <p class="card-text">200 บาท</p>
+                                                                </ons-col>
+                                                                <ons-col width="25%">
+                                                                    <ons-button
+                                                                        style="background-color: rgb(174, 255, 45)"><a
+                                                                            data-name="แกงส้มปลาใส่ยอดมะพร้าว"
+                                                                            data-price="200" class="add-to-cart"
+                                                                            style="color: rgb(0, 0, 0)">Add</a>
+                                                                    </ons-button>
+                                                                </ons-col>
+                                                            </ons-row>
+                                                        </div>
+                                                    </div>
+                                                </ons-col>
+                                                <ons-col>
+                                                    <div class="card" style="width: 100%;">
+                                                        <div class="card-block">
+                                                            <ons-row>
+                                                                <ons-col width="75%">
+                                                                    <h4 class="card-title">
+                                                                        ปลาหมึกไข่นึ่งมะนาว</h4>
+                                                                    <p class="card-text">120 บาท</p>
+                                                                </ons-col>
+                                                                <ons-col width="25%">
+                                                                    <ons-button
+                                                                        style="background-color: rgb(174, 255, 45)"><a
+                                                                            data-name="ปลาหมึกไข่นึ่งมะนาว"
+                                                                            data-price="120" class="add-to-cart"
+                                                                            style="color: rgb(0, 0, 0)">Add</a>
+                                                                    </ons-button>
+                                                                </ons-col>
+                                                            </ons-row>
+                                                        </div>
+                                                    </div>
+                                                </ons-col>
+                                            </ons-row>
+                                            <ons-row id="menu">
+                                                <ons-col>
+                                                    <div class="card" style="width: 100%;">
+                                                        <div class="card-block">
+                                                            <ons-row>
+                                                                <ons-col width="75%">
+                                                                    <h4 class="card-title">
+                                                                        ปูนิ่มผัดผงกะหรี่</h4>
+                                                                    <p class="card-text">300 บาท</p>
+                                                                </ons-col>
+                                                                <ons-col width="25%">
+                                                                    <ons-button
+                                                                        style="background-color: rgb(174, 255, 45)"><a
+                                                                            data-name="ปูนิ่มผัดผงกะหรี่"
+                                                                            data-price="300" class="add-to-cart"
+                                                                            style="color: rgb(0, 0, 0)">Add</a>
+                                                                    </ons-button>
+                                                                </ons-col>
+                                                            </ons-row>
+                                                        </div>
+                                                    </div>
+                                                </ons-col>
+                                                <ons-col>
+                                                    <div class="card" style="width: 100%;">
+                                                        <div class="card-block">
+                                                            <ons-row>
+                                                                <ons-col width="75%">
+                                                                    <h4 class="card-title">
+                                                                        กุ้งแชบ๊วยย่าง</h4>
+                                                                    <p class="card-text">450 บาท/ครึ่งกิโลกรัม</p>
+                                                                </ons-col>
+                                                                <ons-col width="25%">
+                                                                    <ons-button
+                                                                        style="background-color: rgb(174, 255, 45)"><a
+                                                                            data-name="กุ้งแชบ๊วยย่าง" data-price="450"
+                                                                            class="add-to-cart"
+                                                                            style="color: rgb(0, 0, 0)">Add</a>
+                                                                    </ons-button>
+                                                                </ons-col>
+                                                            </ons-row>
+                                                        </div>
+                                                    </div>
+                                                </ons-col>
+                                            </ons-row>
+                                            <ons-row id="menu">
+                                                <ons-col>
+                                                    <div class="card" style="width: 100%;">
+                                                        <div class="card-block">
+                                                            <ons-row>
+                                                                <ons-col width="75%">
+                                                                    <h4 class="card-title">
+                                                                        หอยแมลงภู่อบสมุนไพร</h4>
+                                                                    <p class="card-text">150 บาท</p>
+                                                                </ons-col>
+                                                                <ons-col width="25%">
+                                                                    <ons-button
+                                                                        style="background-color: rgb(174, 255, 45)"><a
+                                                                            data-name="หอยแมลงภู่อบสมุนไพร"
+                                                                            data-price="150" class="add-to-cart"
+                                                                            style="color: rgb(0, 0, 0)">Add</a>
+                                                                    </ons-button>
+                                                                </ons-col>
+                                                            </ons-row>
+                                                        </div>
+                                                    </div>
+                                                </ons-col>
+                                                <ons-col>
+                                                    <div class="card" style="width: 100%;">
+                                                        <div class="card-block">
+                                                            <ons-row>
+                                                                <ons-col width="75%">
+                                                                    <h4 class="card-title">
+                                                                        ข้าวเปล่า</h4>
+                                                                    <p class="card-text">15 บาท/จาน</p>
+                                                                </ons-col>
+                                                                <ons-col width="25%">
+                                                                    <ons-button
+                                                                        style="background-color: rgb(174, 255, 45)"><a
+                                                                            data-name="ข้าวเปล่า" data-price="15"
+                                                                            class="add-to-cart"
+                                                                            style="color: rgb(0, 0, 0)">Add</a>
+                                                                    </ons-button>
+                                                                </ons-col>
+                                                            </ons-row>
+                                                        </div>
+                                                    </div>
+                                                </ons-col>
+                                            </ons-row>
+                                        </center>
+                                        <center>
+                                            <!-- Nav-->
+                                            <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+                                                <div class="row">
+                                                    <ons-button style="background-color: rgb(17, 145, 250)"
+                                                        data-toggle="modal" data-target="#cart"
+                                                        onclick="fn.load('OrderConfirmation.html')">
+                                                        Cart(<span class="total-count"></span>)
+                                                    </ons-button>
+                                                    <ons-button style="background-color: rgb(255, 0, 0)"
+                                                        class="clear-cart">
+                                                        Clear Cart</ons-button>
+                                                </div>
+                                            </nav>
+                                        </center>
+                                    </ons-col>
+                                </ons-row>
+                            </ons-carousel>
+                        </ons-card>
+                    </ons-row>
+                </div>
+            </ons-card>
+        </ons-row>
+    </div>
+</ons-page>

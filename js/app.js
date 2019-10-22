@@ -21,10 +21,6 @@ document.addEventListener('init', function (event) {
   if (page.id === 'homePage') {
     console.log("homePage");
 
-    $("#userbtn").click(function () {
-      $("#content")[0].load("login.html");
-    });
-
     $("#resListbtn").click(function () {
       $("#content")[0].load("resturantList/resturantListALL.html");
     });
@@ -35,8 +31,8 @@ document.addEventListener('init', function (event) {
     $("#SweetLamoon").click(function () {
       $("#content")[0].load("resturantMenu/SweetLamoon.html");
     });
-    $("#Mr.INK").click(function () {
-      $("#content")[0].load("resturantMenu/Mr.INK.html");
+    $("#Mr_INK").click(function () {
+      $("#content")[0].load("resturantMenu/Mr_INK.html");
     });
     $("#SalaLoi").click(function () {
       $("#content")[0].load("resturantMenu/SalaLoi.html");
@@ -167,7 +163,7 @@ document.addEventListener('init', function (event) {
     console.log("PaLaiPage");
     $("#BackCatebtn").click(function () {
       $("#content")[0].load("resturantList/resturantListALL.html");
-    });
+    });  
     $("#BackHomebtn").click(function () {
       $("#content")[0].load("home.html");
     });
@@ -185,7 +181,7 @@ document.addEventListener('init', function (event) {
       $("#content")[0].load("resturantList/resturantListALL.html");
     });
     $("#BackHomebtn").click(function () {
-      $("#content")[0].load("home.h  tml");
+      $("#content")[0].load("home.html");
     });
   } else if (page.id === 'SweetLamoonPage') {
     console.log("SweetLamoonPage");
@@ -253,7 +249,7 @@ document.addEventListener('init', function (event) {
 
     $("#signinbtn").click(function () {
       var email = $("#email").val();
-      var password = $("#password").val();
+      var password = $("#password").val  ();
       firebase.auth().signInWithEmailAndPassword(email, password).then(function () {
         content.load('home.html');
       }).catch(function (error) {
@@ -406,7 +402,7 @@ document.addEventListener('init', function (event) {
     var price = Number($(this).data('price'));
     shoppingCart.addItemToCart(name, price, 1);
     displayCart();
-  });
+    });
   // Clear items
   $('.clear-cart').click(function () {
     shoppingCart.clearCart();
